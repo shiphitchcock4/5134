@@ -2,15 +2,10 @@ language: node_js
 
 node_js:
   - '0.12'
-  - '0.10'
-  - '4.2.3'
 
 build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - echo "Hello, World!"
-    - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
+    - echo "This is !"
+    - printenv
