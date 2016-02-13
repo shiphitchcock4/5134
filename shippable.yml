@@ -6,7 +6,7 @@ node_js:
 build:
   pre_ci:
     - echo "This is pre_ci 2"
+    - echo "This works"
     - printenv
-    - sleep 1m
   ci:
     - echo "This is !"
