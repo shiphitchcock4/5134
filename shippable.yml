@@ -7,5 +7,6 @@ build:
   pre_ci:
     - echo "This is pre_ci"
     - printenv
+    - sleep 1m
   ci:
     - echo "This is !"
