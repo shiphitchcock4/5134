@@ -8,4 +8,4 @@ build:
   preci: 
     - date -u
   ci:
-    - echo "This is !"
+    - echo "This is !!"
