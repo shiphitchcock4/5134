@@ -9,4 +9,3 @@ build:
     - date -u
   ci:
     - echo "This is !"
-    - sleep 2m
