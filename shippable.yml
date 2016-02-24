@@ -5,6 +5,8 @@ node_js:
   - '0.10'
 
 build:
+  preci: 
+    - date -u
   ci:
     - echo "This is !"
     - sleep 2m
