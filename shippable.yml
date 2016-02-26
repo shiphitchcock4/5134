@@ -7,10 +7,11 @@ build:
     - echo "Hello, World!"
 
 integrations:
-  - integrationName: slack
-      type: slack
-      recipients:
-        - "#imagesissue"
-      on_start: always
-      on_success: always
-      on_failure: always
+  notifications:
+    - integrationName: slack
+        type: slack
+        recipients:
+          - "#imagesissue"
+        on_start: always
+        on_success: always
+        on_failure: always
