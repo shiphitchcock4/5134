@@ -1,17 +1,15 @@
+build: 
+  ci: 
+    - "echo \"Hello, World!\""
+integrations: 
+  notifications: 
+    - 
+      integrationName: slack
+      on_failure: always
+      on_start: always
+      on_success: always
+      recipients: 
+        - "#imagesissue"
+      type: slack
 language: node_js
-
 node_js: 0.12
-
-build:
-  ci:
-    - echo "Hello, World!"
-
-integrations:
-  notifications:
-    - integrationName: slack
-        type: slack
-        recipients:
-          - "#imagesissue"
-        on_start: always
-        on_success: always
-        on_failure: always
