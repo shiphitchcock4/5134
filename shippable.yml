@@ -4,3 +4,4 @@ node_js: 0.12
 build: 
   ci: 
     - "echo \"Hello, World!\""
+    - sleep 1m
