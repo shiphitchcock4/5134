@@ -19,9 +19,9 @@ integrations:
       recipients: 
         - "#imagesissue2"
       type: slack1
-    hub:
-      -
-        integrationName: ship-docker
-        type: docker
+  hub:
+    -
+      integrationName: ship-docker
+      type: docker
 language: node_js
 node_js: 0.12
