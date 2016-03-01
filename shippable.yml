@@ -11,5 +11,13 @@ integrations:
       recipients: 
         - "#imagesissue"
       type: slack
+    - 
+      integrationName: slack2
+      on_failure: always
+      on_start: always
+      on_success: always
+      recipients: 
+        - "#imagesissue2"
+      type: slack
 language: node_js
 node_js: 0.12
