@@ -8,4 +8,4 @@ php:
 build:
   ci:
     - php --version
-    - cat $SHIPPABLE_BUILD_DIR/shippable.yml
+    - cat /home/shippable/workspace/src/github.com/5134/shippable.yml
