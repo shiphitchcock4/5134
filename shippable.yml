@@ -2,7 +2,7 @@ build:
   ci: 
     - "echo \"Hello, World!\""
 integrations: 
-  notifications1: 
+  notifications: 
     - 
       integrationName: slack
       on_failure: always
