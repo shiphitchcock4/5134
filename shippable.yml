@@ -1,12 +1,11 @@
 build_image: shippable/minv2
 
-language: php
-
-php:
-  - 5.6
+language: python
 
 build:
   ci:
     - php --version
     - $SHIPPABLE_PYTHON
-    - cat /home/shippable/workspace/src/github.com/5134/shippable.yml
+    - mkdir -p $HOME/sample_ve/ 
+    - virtualenv -p $SHIPPABLE_PYTHON $HOME/sample_ve/
+    - source $HOME/sample_ve/bin/activate
