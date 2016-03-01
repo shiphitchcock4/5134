@@ -1,7 +1,11 @@
-language: node_js
-node_js: 0.12
+build_image: shippable/minv2
 
-build: 
-  ci: 
-    - "echo \"Hello, World!\""
-    - sleep 2m
+language: php
+
+php:
+  - 5.6
+  - '7.0'
+
+build:
+  ci:
+    - php --version
