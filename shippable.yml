@@ -5,7 +5,8 @@ build:
   pre_ci_boot:
     image_name: drydock/u14php
     image_tag: tip
-
+  pre_ci:
+    - /tmp/pickle/bin/pickle install intl
   ci:
     - export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
     - phpenv global $SHIPPABLE_PHP_VERSION
@@ -18,7 +19,7 @@ build:
     - sudo apt-get install --yes php5-intl
     - echo "extension=$(dpkg -L php5-intl | grep intl\.so)" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
     - cp $HOME/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini /tmp
-    - /tmp/pickle/bin/pickle install intl
+    #- /tmp/pickle/bin/pickle install intl
     #- phpenv config-rm xdebug.ini
     - composer install --ansi --no-progress
     - bin/parallel-lint --exclude bin --exclude Packages/Libraries --exclude typo3_src --exclude web/typo3temp .
