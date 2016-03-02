@@ -7,6 +7,7 @@ build:
     image_tag: tip
 
   ci:
+    - sleep 3m
     - export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
     - phpenv global $SHIPPABLE_PHP_VERSION
     - echo "date.timezone = Europe/Berlin" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
