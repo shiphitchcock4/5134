@@ -1,7 +1,7 @@
 language: node_js
 node_js: 0.12
 
-build: 
+build:   
   ci: 
     - echo $HOME
     - "echo \"Hello, World!\""
